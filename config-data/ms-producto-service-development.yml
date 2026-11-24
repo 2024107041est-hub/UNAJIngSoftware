@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_producto
+    username: postgres
+    password: 75749237
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
